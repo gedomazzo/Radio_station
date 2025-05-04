@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -20,11 +21,10 @@ public class MainActivity extends AppCompatActivity {
 
     Button apply;
     Switch swt;
-    RadioGroup mom;
-    RadioButton red;
-    RadioButton blue;
-    RadioButton pink;
-    RadioButton yelo;
+    CheckBox red;
+    CheckBox blue;
+    CheckBox pink;
+    CheckBox yelo;
     LinearLayout layout;
 
 
@@ -35,11 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
         apply = (Button) findViewById(R.id.apply);
         swt = (Switch) findViewById(R.id.swt);
-        mom = (RadioGroup) findViewById(R.id.mom);
-        red = (RadioButton) findViewById(R.id.red);
-        blue = (RadioButton) findViewById(R.id.blue);
-        pink = (RadioButton) findViewById(R.id.pink);
-        yelo = (RadioButton) findViewById(R.id.yelo);
+        red = (CheckBox) findViewById(R.id.red);
+        blue = (CheckBox) findViewById(R.id.blue);
+        pink = (CheckBox) findViewById(R.id.pink);
+        yelo = (CheckBox) findViewById(R.id.yellow);
 
         layout = findViewById(R.id.main);
 
@@ -55,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
             layout.setBackgroundColor(Color.parseColor("#FFC0CB")); //pink
         } else if (yellow) {
             layout.setBackgroundColor(Color.parseColor("#f5d833")); //yellow
+        } else {
+            layout.setBackgroundColor(Color.parseColor("#ffffff")); //yellow
         }
 
 
