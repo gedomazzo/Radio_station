@@ -92,4 +92,10 @@ public class MainActivity extends AppCompatActivity {
             set_color(red.isChecked(), blue.isChecked(), pink.isChecked(), yelo.isChecked());
         }
     }
+
+    public void apply(View view) {
+        if (!swt.isChecked()) {
+            set_color(red.isChecked(), blue.isChecked(), pink.isChecked(), yelo.isChecked());
+        }
+    }
 }
