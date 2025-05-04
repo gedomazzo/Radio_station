@@ -38,6 +38,7 @@
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:onClick="cheh"
                 android:text="mode" />
 
             <Space
@@ -78,19 +79,22 @@
                     android:id="@+id/blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="blue" />
+                    android:text="blue"
+                    android:onClick="blue_mode"/>
 
                 <RadioButton
                     android:id="@+id/pink"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="pink" />
+                    android:text="pink"
+                    android:onClick="pink_mode"/>
 
                 <RadioButton
                     android:id="@+id/yelo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="yellow" />
+                    android:text="yellow"
+                    android:onClick="yelo_mode" />
             </RadioGroup>
 
             <Space

@@ -48,13 +48,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void set_color(boolean red, boolean blue, boolean pink, boolean yellow) {
         if (red) {
-            layout.setBackgroundColor(Color.RED);
+            layout.setBackgroundColor(Color.parseColor("#d12648")); //red
         } else if (blue) {
-            System.out.println("red");
+            layout.setBackgroundColor(Color.parseColor("#5768fa")); //blue
         } else if (pink) {
-            System.out.println("red");
+            layout.setBackgroundColor(Color.parseColor("#FFC0CB")); //pink
         } else if (yellow) {
-            System.out.println("red");
+            layout.setBackgroundColor(Color.parseColor("#f5d833")); //yellow
         }
 
 
@@ -68,5 +68,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void blue_mode(View view) {
+        if (swt.isChecked()) {
+            set_color(red.isChecked(), blue.isChecked(), pink.isChecked(), yelo.isChecked());
+        }
+    }
 
+    public void pink_mode(View view) {
+        if (swt.isChecked()) {
+            set_color(red.isChecked(), blue.isChecked(), pink.isChecked(), yelo.isChecked());
+        }
+    }
+
+    public void yelo_mode(View view) {
+        if (swt.isChecked()) {
+            set_color(red.isChecked(), blue.isChecked(), pink.isChecked(), yelo.isChecked());
+        }
+    }
+
+
+    public void cheh(View view) {
+        if (swt.isChecked()) {
+            set_color(red.isChecked(), blue.isChecked(), pink.isChecked(), yelo.isChecked());
+        }
+    }
 }
