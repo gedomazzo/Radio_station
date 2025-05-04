@@ -46,18 +46,40 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void set_color(boolean red, boolean blue, boolean pink, boolean yellow) {
-        if (red) {
-            layout.setBackgroundColor(Color.parseColor("#d12648")); //red
-        } else if (blue) {
-            layout.setBackgroundColor(Color.parseColor("#5768fa")); //blue
-        } else if (pink) {
-            layout.setBackgroundColor(Color.parseColor("#FFC0CB")); //pink
-        } else if (yellow) {
-            layout.setBackgroundColor(Color.parseColor("#f5d833")); //yellow
-        } else {
-            layout.setBackgroundColor(Color.parseColor("#ffffff")); //yellow
-        }
 
+        if ((!red) && (!blue) && (!pink) && (!yellow)){
+            layout.setBackgroundColor(Color.parseColor("#ffffff")); //white
+        } else if ((!red) && (!blue) && (!pink) && (yellow)){
+            layout.setBackgroundColor(Color.parseColor("#f5d833")); //yellow
+        } else if ((!red) && (!blue) && (pink) && (!yellow)){
+            layout.setBackgroundColor(Color.parseColor("#FFC0CB")); //pink
+        } else if ((!red) && (!blue) && (pink) && (yellow)){
+            layout.setBackgroundColor(Color.parseColor("#f59c27")); //orange
+        } else if ((!red) && (blue) && (!pink) && (!yellow)){
+            layout.setBackgroundColor(Color.parseColor("#5768fa")); //blue
+        } else if ((!red) && (blue) && (!pink) && (yellow)){
+            layout.setBackgroundColor(Color.parseColor("#27f25d")); //green
+        } else if ((!red) && (blue) && (pink) && (!yellow)){
+            layout.setBackgroundColor(Color.parseColor("#a14af7")); //violet
+        } else if ((!red) && (blue) && (pink) && (yellow)){
+            layout.setBackgroundColor(Color.parseColor("#c88094")); //grey pink
+        } else if ((red) && (!blue) && (!pink) && (!yellow)){
+            layout.setBackgroundColor(Color.parseColor("#c88094")); //red
+        } else if ((red) && (!blue) && (!pink) && (yellow)){
+            layout.setBackgroundColor(Color.parseColor("#db2a30")); //red
+        } else if ((red) && (!blue) && (pink) && (!yellow)){
+            layout.setBackgroundColor(Color.parseColor("#f75291")); //light pink
+        } else if ((red) && (!blue) && (pink) && (yellow)){
+            layout.setBackgroundColor(Color.parseColor("#faaf4d")); //light orange
+        } else if ((red) && (blue) && (!pink) && (!yellow)){
+            layout.setBackgroundColor(Color.parseColor("#7024f2")); //purple
+        } else if ((red) && (blue) && (!pink) && (yellow)){
+            layout.setBackgroundColor(Color.parseColor("#aa5555")); //muted reddish-brown.
+        } else if ((red) && (blue) && (pink) && (!yellow)){
+            layout.setBackgroundColor(Color.parseColor("#aa4098")); // dark magenta
+        } else if ((red) && (blue) && (pink) && (yellow)){
+            layout.setBackgroundColor(Color.parseColor("#bf7073")); // warm muted pink
+        }
 
     }
 
